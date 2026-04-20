@@ -10,7 +10,7 @@ export default function TypingText({
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    let timeout;
+      let timeout: ReturnType<typeof setTimeout>;
 
     if (index < text.length) {
       timeout = setTimeout(() => {
